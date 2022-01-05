@@ -1,0 +1,48 @@
+$blue: #1f2044;
+$white: #ffffff;
+$white-50: #f2f2f2;
+$white-100: #f8f8f8;
+$white-150: #f6f6f6;
+$white-200: #f9f9f9;
+$white-300: #edf1f4;
+$white-500: #dae4e9;
+$white-600: #e8e4df;
+$dark: #1a1a1a;
+$dark-500: #262626;
+$grey-100: #e0e0e0;
+$grey-200: #b3b7b5;
+$grey-250: #d6d6d6;
+$grey-300: #a3bbc8;
+$grey-400: #7b7b7b;
+$grey-500: #8b8b8b;
+$grey-600: #585858;
+$blue-200: #667983;
+$blue-300: #436372;
+$blue-400: #234969;
+$blue-500: #243f4d;
+$orange-100: #fef7f0;
+$orange-150: #feefe2;
+$orange-200: #fcd7b6;
+$orange-300: #fde3cc;
+
+
+$DMSans: 'DMSans', sans-serif;
+$DMSans400: 400;
+$DMSans500: 500;
+$DMSans700: 700;
+
+$Rubik: 'Rubik', sans-serif;
+$Rubik400: 400;
+$Rubik500: 500;
+
+
+$Poppins: 'Poppins', sans-serif;
+$Poppins700: 700;
+
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}x(#{$numbers});
+}

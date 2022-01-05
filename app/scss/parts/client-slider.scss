@@ -1,0 +1,27 @@
+.client-slider {
+    background-color: $orange-100;
+    width: 100%;
+    padding: 92px 0;
+
+    &__items {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    &__item {
+        display: flex !important;
+        align-items: center;
+        min-height: 85px;
+    }
+
+    &__wrap {
+        margin: auto;  
+    }
+
+    &__img {
+        object-fit: cover;
+        max-height: 85px;
+    }
+
+}

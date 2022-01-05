@@ -1,0 +1,172 @@
+.header {
+    padding: 50px 0;
+    color: $blue-300;
+    font-family: $Rubik;
+    font-weight: $Rubik500;
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    display: flex;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+
+    &__link {
+        font-size: 15px;
+        transition: color 0.4s, border-bottom-color 0.4s;
+        border-bottom: 1px solid transparent;
+
+        &:focus{
+            color: $blue-500;
+            border-bottom-color: $blue-500;
+        }
+
+        &:hover {
+            color: $blue-500;
+            border-bottom-color: $blue-500;
+        }
+
+        &:active {
+            color: $orange-200;
+        }
+
+        
+    }
+}
+
+.user-nav {
+    display: flex;
+    justify-content: space-around;
+
+    &__item {
+        width: 50px;
+        height: 50px;
+        background-color: $white-300;
+        border: 1px solid transparent;
+    }
+
+    &__btn {
+        transition: background-color 0.4s;
+
+        &:focus {
+            background-color: $grey-300;
+        }
+
+        &:hover {
+            background-color: $grey-300;
+        }
+
+        &:active {
+            background-color: $orange-200;
+        }
+
+        &--right {
+            background-color: $grey-300;
+
+            &:focus {
+                background-color: $white-500;
+            }
+
+            &:hover {
+                background-color: $white-500;
+            }
+
+            &:active {
+                background-color: $orange-200;
+            }
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__group {
+        background-color: $orange-200;
+        width: 180px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    &__group::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        bottom: 9px;
+        left: 50%;
+        border-left: 1px solid $white;
+    }
+
+    &__icon {
+        width: 15px;
+        height: 18px;
+        fill: $blue-500;
+    }
+
+
+    &__menu {
+        width: 21px;
+        height: 21px;
+        fill: $white;
+    }
+
+
+
+    &__link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        justify-content: center;
+        transition: background-color 0.4s;
+        
+        &--left {
+            border-radius: 25px 0 0 25px;
+        }
+
+        &--right {
+            border-radius: 0 25px 25px 0;
+
+        }
+
+        &:hover,
+        &:focus {
+            background-color: darken($color: $orange-200, $amount: 7);
+        }
+        &:active {
+           outline-color: $dark;
+        }
+    }
+
+    &__num {
+        position: absolute;
+        left: 48px;
+        top: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        font-weight: 400;
+        font-size: 10px;
+        background-color: $white;
+    }
+
+}
+

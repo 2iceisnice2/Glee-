@@ -1,0 +1,200 @@
+.product-slider {
+    color: $blue-500;
+    margin-bottom: 70px;
+    font-family: $Rubik;
+
+    &__inner {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    &__item {
+        display: flex;
+        position: relative;
+    }
+
+    &__content {
+        height: 820px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: $orange-200;
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        @include line-clamp(72px, 1.1, 2);
+        text-transform: uppercase;
+        font-weight: $Rubik500;
+        margin-bottom: 20px;
+        max-width: 430px;
+    }
+
+    &__text {
+        @include line-clamp(18px, 1.7, 3);
+        max-width: 370px;
+        font-weight: $Rubik400;
+        color: $blue-300;
+    }
+
+    &__link {
+        background-color: $grey-300;
+        color: $white;
+        position: relative;
+        max-width: 200px;
+        padding: 20px 0;
+    }
+
+    &__img {
+        object-fit: contain;
+        z-index: 20;
+        position: relative;
+    }
+
+    &__arrow {
+        fill: $white;
+        width: 20px;
+        height: 10px;
+    }
+
+    &__box {
+        position: relative;
+        z-index: 12;
+        width: 640px;
+        height: 264px;
+
+        &::after {
+            content: '';
+            border-radius: 50%;
+            background: linear-gradient(88deg, rgba(255, 255, 255, 0), #fffcfa);
+            position: absolute;
+            top: -177px;
+            left: 120px;
+            width: 634px;
+            height: 634px;
+            z-index: 0;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        bottom: 45px;
+
+
+        & button {
+            font-family: $Rubik;
+            font-weight: $Rubik500;
+            color: $blue-200;
+            background-color: $orange-300;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: background-color 0.4s;
+            font-size: 11px;
+
+            &:hover{
+                background-color: $white;
+            }
+
+            &:active {
+                border-color: $grey-300;
+            }
+
+            &:focus {
+                background-color: $orange-300;
+            }
+
+            
+        }
+
+        & li {
+            &:not(:last-child) {
+                margin-right: 13px;
+            }
+
+            &.slick-active button {
+                background-color: $white;
+                color: $blue-500;
+            }
+        }
+    }
+}
+
+
+.feauters {
+    background-color: $orange-100;
+    display: flex;
+    justify-content: space-around;
+    font-family: $DMSans;
+
+    &__item {
+        position: relative;
+        font-weight: $DMSans400;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        width: 100%;
+        align-items: center;
+
+        &:not(:last-child) {
+            border-right: 1px solid $white-600;
+        }
+    }
+
+    &__info {
+        max-width: 303px;
+        position: relative;
+        padding-left: 90px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 54px;
+            height: 54px;
+            left: 0;
+        }
+
+        &--support {
+            &::before {
+                background-image: url('../images/icons/time.svg');
+            }
+        }
+
+        &--delivery {
+            &::before {
+                background-image: url('../images/icons/delivery-truck.svg');
+            }
+        }
+
+        &--payment {
+            &::before {
+                background-image: url('../images/icons/credit-card.svg');
+            }
+        }
+    }
+
+    &__title {
+        @include line-clamp(18px, 1, 1);
+        font-weight: $DMSans700;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        @include line-clamp(16px, 1.8, 2);
+        color: $grey-600;
+    }
+
+}

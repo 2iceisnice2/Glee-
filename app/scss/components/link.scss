@@ -1,0 +1,25 @@
+.link {
+    font-family: $Rubik;
+    font-weight: $Rubik500;
+    align-items: center;
+    font-size: 15px;
+    display: flex;
+    max-width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.4s;
+    border: 1px solid transparent;
+
+    &:focus {
+        border: 1px solid $dark
+    }
+
+    &:hover {
+        background-color: darken($color: $grey-300, $amount: 10);
+    }
+
+    &:active {
+        background-color: lighten($color: $grey-300, $amount: 10);
+    }
+
+}

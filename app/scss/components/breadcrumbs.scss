@@ -1,0 +1,23 @@
+.breadcrumbs {
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        font-family: $Rubik;
+        font-size: 14px;
+        color: $blue-200;
+        position: relative;
+        margin-right: 8px;
+        &::after {
+            content: '/';
+        }
+        &:last-child{
+            margin-right: 0;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
